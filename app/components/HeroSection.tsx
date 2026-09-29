@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
+import { Search } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen bg-[#1832F5] overflow-hidden flex flex-col items-center">
+    <section className="relative w-full min-h-screen bg-primary overflow-hidden flex flex-col items-center">
       {/* Grid overlay */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
@@ -22,29 +23,29 @@ export default function HeroSection() {
       {/* ──  shapes ── */}
 
       {/* Top-left lime blob */}
-      <div className="absolute top-[90px] left-[-30px] z-10 w-[180px] pointer-events-none">
+      <div className="absolute top-55 -left-22.5 z-10  ">
         <Image
-          src="/images/home/decorative/lime-blob.png"
+          src="/images/home/decorative/lime-ribbon.png"
           alt=""
-          width={200}
-          height={220}
+          width={400}
+          height={400}
           className="object-contain"
         />
       </div>
 
       {/* Bottom-left white ring */}
-      <div className="absolute bottom-[60px] left-[40px] z-10 w-[130px] pointer-events-none">
+      <div className="absolute -bottom-30 left-[40px] z-10 ">
         <Image
           src="/images/home/decorative/white-ring.png"
           alt=""
-          width={140}
-          height={140}
+          width={400}
+          height={400}
           className="object-contain"
         />
       </div>
 
       {/* Left white ribbon (zigzag) */}
-      <div className="absolute top-[44%] left-[120px] z-10 w-[70px] pointer-events-none">
+      {/* <div className="absolute top-[44%] left-[120px] z-10 w-[70px] pointer-events-none">
         <Image
           src="/images/home/decorative/white-ribbon.png"
           alt=""
@@ -52,10 +53,10 @@ export default function HeroSection() {
           height={90}
           className="object-contain"
         />
-      </div>
+      </div> */}
 
       {/* Top-right lime blob (cylinder) */}
-      <div className="absolute top-[55px] right-[-10px] z-10 w-[120px] pointer-events-none">
+      {/* <div className="absolute top-[55px] right-[-10px] z-10 w-[120px] pointer-events-none">
         <Image
           src="/images/home/decorative/lime-blob.png"
           alt=""
@@ -63,10 +64,10 @@ export default function HeroSection() {
           height={150}
           className="object-contain scale-x-[-1] rotate-[30deg]"
         />
-      </div>
+      </div> */}
 
       {/* Right white ribbon */}
-      <div className="absolute top-[44%] right-[110px] z-10 w-[65px] pointer-events-none">
+      {/* <div className="absolute top-[44%] right-[110px] z-10 w-[65px] pointer-events-none">
         <Image
           src="/images/home/decorative/white-ribbon.png"
           alt=""
@@ -74,10 +75,10 @@ export default function HeroSection() {
           height={80}
           className="object-contain"
         />
-      </div>
+      </div> */}
 
       {/* Bottom-right lime ribbon */}
-      <div className="absolute bottom-[30px] right-[20px] z-10 w-[110px] pointer-events-none">
+      {/* <div className="absolute bottom-[30px] right-[20px] z-10 w-[110px] pointer-events-none">
         <Image
           src="/images/home/decorative/lime-ribbon.png"
           alt=""
@@ -85,83 +86,68 @@ export default function HeroSection() {
           height={140}
           className="object-contain"
         />
-      </div>
+      </div> */}
 
       {/* White triangle */}
-      <div className="absolute top-[49%] right-[190px] z-10 pointer-events-none">
-        <svg width="76" height="86" viewBox="0 0 76 86" fill="none">
-          <polygon points="0,86 76,86 38,0" fill="white" />
-        </svg>
-      </div>
+      {/* <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 z-10 pointer-events-none">
+        <Image
+          src="/images/home/decorative/hero-green-circle.png"
+          alt=""
+          width={400}
+          height={400}
+          className="object-contain"
+        />
+      </div> */}
 
-      {/* ── Hero Text ── */}
-      <div className="relative z-20 flex flex-col items-center text-center pt-40 px-6 w-full ">
-        <h1 className="text-7xl font-poppins font-semibold text-white leading-[120%] mb-8">
+      <div className="relative z-20 flex flex-col items-center text-center pt-16 px-6 w-full ">
+        <h1 className="text-[80px] font-poppins font-semibold text-white leading-[120%] mb-8">
           Get Access to Hundreds
           <br />
           Courses Available
         </h1>
-        <p className="font-satoshi text-white/75 text-[15px] max-w-xl mb-10 leading-relaxed">
+        <p className="text-lg font-satoshi font-light! text-gray-300 mb-12 ">
           Unlock your creativity, gain valuable knowledge, and grow your
           business with our wide range of courses.
         </p>
 
         {/* Search Bar */}
-        <div className="flex items-center bg-white rounded-full shadow-lg w-full max-w-[520px] pl-5 pr-2 py-2 gap-3">
-          <svg
-            className="text-gray-400 flex-shrink-0"
-            width="17"
-            height="17"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-          </svg>
-          <input
-            id="hero-search"
-            type="text"
-            placeholder="Course, topic, creator"
-            className="flex-1 bg-transparent outline-none text-gray-700 font-satoshi text-sm placeholder:text-gray-400"
-          />
-          <button
-            id="hero-search-btn"
-            className="bg-[#C5F135] text-[#0D0D2B] font-poppins font-semibold text-sm px-7 py-2.5 rounded-full hover:bg-[#b8e020] active:scale-95 transition-all flex-shrink-0"
-          >
+        <div className="flex items-center w-full max-w-145 gap-3">
+          <div className="flex items-center w-full bg-white px-6 py-3.5 gap-1.5 rounded-full">
+            <Search className="text-gray-500 size-5" />
+            <input
+              id="hero-search"
+              type="text"
+              placeholder="Course, topic, creator"
+              className="flex-1 bg-transparent outline-none font-satoshi text-lg placeholder:text-gray-500"
+            />
+          </div>
+          <button className=" bg-secondary text-lg text-gray-800 px-6 py-3.5 gap-1.5 rounded-full font-satoshi font-semibold ">
             Search
           </button>
         </div>
       </div>
 
-      {/* ── Hero Image + Green Circle + Floating Cards ── */}
       <div className="relative z-20 w-full max-w-5xl mx-auto flex justify-center mt-10 px-6 pb-0">
-        {/* Green background semicircle */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[480px] pointer-events-none z-0">
+        <div className="absolute -bottom-30 left-1/2 -translate-x-1/2 w-300 pointer-events-none z-0">
           <Image
             src="/images/home/decorative/hero-green-circle.png"
             alt=""
-            width={480}
-            height={480}
+            width={900}
+            height={500}
             className="object-contain w-full"
           />
         </div>
 
-        {/* Student image */}
         <Image
           src="/images/home/hero-student.png"
           alt="Student with headphones and laptop"
-          width={400}
-          height={460}
-          className="object-contain relative z-10"
-          priority
+          width={700}
+          height={500}
+          className=" object-contain relative z-10"
         />
 
         {/* ── Floating Card: UI/UX Design ── */}
-        <div className="absolute left-[6%] top-[6%] z-30 bg-white rounded-2xl shadow-2xl p-0 overflow-hidden">
+        <div className="absolute left-[6%] top-[16%] z-30 bg-white rounded-2xl shadow-2xl p-0 overflow-hidden">
           <Image
             src="/images/home/ui-ux-layout.png"
             alt="UI/UX Design - 200 Courses · 1000+ Students"
@@ -228,6 +214,7 @@ export default function HeroSection() {
           />
         </div>
       </div>
+     
     </section>
   );
 }
