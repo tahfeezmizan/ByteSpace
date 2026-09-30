@@ -11,7 +11,7 @@ const logos = [
 export default function PartnersStrip() {
   return (
     <div className="w-full py-14 bg-gray-100 overflow-hidden">
-      <div className="container mx-auto overflow-hidden">
+      <div className="container mx-auto px-4 overflow-hidden">
         <div className="flex animate-marquee" style={{ width: "max-content" }}>
           {[...logos, ...logos].map((src, i) => (
             <div

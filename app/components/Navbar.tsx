@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "Creators", href: "/creators" },
   ];
   return (
-    <nav className="w-full h-25 container mx-auto flex items-center justify-between px-4 z-50">
+    <nav className="w-full h-25 container mx-auto px-4 flex items-center justify-between z-50">
       <Link href="/">
         <Image
           src={logo}
