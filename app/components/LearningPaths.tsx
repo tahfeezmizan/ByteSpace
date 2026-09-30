@@ -22,7 +22,7 @@ const PATHS: PathCategory[] = [
   { label: "Photography", icon: Camera },
 ];
 
-export default function LearningPathsSection() {
+export default function LearningPaths() {
   return (
     <section className="w-full bg-white py-20 px-4 sm:px-8 lg:px-16">
       <div className="container mx-auto px-4">

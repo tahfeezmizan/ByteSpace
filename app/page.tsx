@@ -1,7 +1,8 @@
-import HeroSection from "./components/HeroSection";
-import PartnersStrip from "./components/PartnersStrip";
 import CoursesSection from "./components/CoursesSection";
-import LearningPathsSection from "./components/LearningPathsSection";
+import HeroSection from "./components/HeroSection";
+import LearningPaths from "./components/LearningPaths";
+import PartnersStrip from "./components/PartnersStrip";
+import ProGrowth from "./components/ProGrowth";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <HeroSection />
       <PartnersStrip />
       <CoursesSection />
-      <LearningPathsSection />
+      <LearningPaths />
+      <ProGrowth />
     </main>
   );
 }
