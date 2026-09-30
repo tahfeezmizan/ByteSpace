@@ -13,16 +13,14 @@ export default function HeroSection() {
             linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)
           `,
-          backgroundSize: "120px 120px",
+          backgroundSize: "130px 130px",
         }}
       />
 
       {/* Navbar */}
       <Navbar />
 
-      {/* ──  shapes ── */}
-
-      {/* Top-left lime blob */}
+      {/* left site shapes */}
       <div className="absolute top-55 -left-22.5 z-10  ">
         <Image
           src="/images/home/decorative/lime-ribbon.png"
@@ -33,72 +31,58 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Bottom-left white ring */}
-      <div className="absolute -bottom-30 left-[40px] z-10 ">
+      <div className="absolute  bottom-90 left-70">
         <Image
-          src="/images/home/decorative/white-ring.png"
+          src="/images/home/decorative/white-ribbon.png"
           alt=""
-          width={400}
-          height={400}
+          width={200}
+          height={200}
           className="object-contain"
         />
       </div>
 
-      {/* Left white ribbon (zigzag) */}
-      {/* <div className="absolute top-[44%] left-[120px] z-10 w-[70px] pointer-events-none">
+      <div className="absolute -bottom-4 left-40 z-30 ">
         <Image
-          src="/images/home/decorative/white-ribbon.png"
+          src="/images/home/decorative/white-ring.png"
           alt=""
-          width={70}
-          height={90}
+          width={380}
+          height={380}
           className="object-contain"
         />
-      </div> */}
+      </div>
 
-      {/* Top-right lime blob (cylinder) */}
-      {/* <div className="absolute top-[55px] right-[-10px] z-10 w-[120px] pointer-events-none">
+      {/* right shapes */}
+      <div className="absolute top-50 -right-35 z-10 ">
         <Image
           src="/images/home/decorative/lime-blob.png"
           alt=""
-          width={130}
-          height={150}
-          className="object-contain scale-x-[-1] rotate-[30deg]"
+          width={400}
+          height={400}
+          className="object-contain "
         />
-      </div> */}
+      </div>
 
-      {/* Right white ribbon */}
-      {/* <div className="absolute top-[44%] right-[110px] z-10 w-[65px] pointer-events-none">
+      <div className="absolute bottom-90 right-60 z-10 ">
+        <Image
+          src="/images/home/decorative/white-triangle.png"
+          alt=""
+          width={200}
+          height={200}
+          className="object-contain "
+        />
+      </div>
+
+      <div className="absolute -bottom-4 right-28 z-30 ">
         <Image
           src="/images/home/decorative/white-ribbon.png"
           alt=""
-          width={65}
-          height={80}
-          className="object-contain"
+          width={380}
+          height={380}
+          className="object-contain -scale-x-100 -rotate-45"
         />
-      </div> */}
+      </div>
 
-      {/* Bottom-right lime ribbon */}
-      {/* <div className="absolute bottom-[30px] right-[20px] z-10 w-[110px] pointer-events-none">
-        <Image
-          src="/images/home/decorative/lime-ribbon.png"
-          alt=""
-          width={120}
-          height={140}
-          className="object-contain"
-        />
-      </div> */}
-
-      {/* White triangle */}
-      {/* <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 z-10 pointer-events-none">
-        <Image
-          src="/images/home/decorative/hero-green-circle.png"
-          alt=""
-          width={400}
-          height={400}
-          className="object-contain"
-        />
-      </div> */}
-
+      {/* Heading  */}
       <div className="relative z-20 flex flex-col items-center text-center pt-16 px-6 w-full ">
         <h1 className="text-[80px] font-poppins font-semibold text-white leading-[120%] mb-8">
           Get Access to Hundreds
@@ -127,8 +111,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="relative z-20 w-full max-w-5xl mx-auto flex justify-center mt-10 px-6 pb-0">
-        <div className="absolute -bottom-30 left-1/2 -translate-x-1/2 w-300 pointer-events-none z-0">
+      <div className="relative z-20 w-full max-w-5xl mx-auto flex justify-center mt-8 pb-0">
+        {/* limb circle */}
+        <div className="absolute -bottom-30 left-1/2 -translate-x-1/2 w-325 pointer-events-none z-0">
           <Image
             src="/images/home/decorative/hero-green-circle.png"
             alt=""
@@ -138,83 +123,49 @@ export default function HeroSection() {
           />
         </div>
 
-        <Image
-          src="/images/home/hero-student.png"
-          alt="Student with headphones and laptop"
-          width={700}
-          height={500}
-          className=" object-contain relative z-10"
-        />
+        <div className="relative z-10 flex justify-center">
+          <Image
+            src="/images/home/hero-student.png"
+            alt="Student with headphones and laptop"
+            width={720}
+            height={500}
+            className=" object-contain relative z-10"
+          />
+        </div>
 
-        {/* ── Floating Card: UI/UX Design ── */}
-        <div className="absolute left-[6%] top-[16%] z-30 bg-white rounded-2xl shadow-2xl p-0 overflow-hidden">
+        {/* UI/UX Design  card */}
+        <div className="absolute left-[10%] top-[25%] z-30 ">
           <Image
             src="/images/home/ui-ux-layout.png"
             alt="UI/UX Design - 200 Courses · 1000+ Students"
-            width={240}
+            width={500}
             height={70}
-            className="object-contain w-[240px]"
+            className="object-contain w-[230px]"
           />
         </div>
 
         {/* ── Floating Card: Happy Students ── */}
-        <div className="absolute left-[2%] bottom-[10%] z-30 bg-white rounded-2xl shadow-2xl px-4 pt-3 pb-3.5 min-w-[220px]">
-          <p className="font-poppins font-bold text-[#0D0D2B] text-sm mb-1">
-            Happy Students
-          </p>
-          <div className="flex items-center gap-1 mb-2.5">
-            <span className="font-satoshi font-semibold text-xs text-gray-700">
-              4.5
-            </span>
-            <span className="font-satoshi text-xs text-gray-400">(240)</span>
-            <svg
-              className="ml-0.5"
-              width="11"
-              height="11"
-              viewBox="0 0 24 24"
-              fill="#FBBF24"
-            >
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
-          </div>
-          {/* Avatar stack */}
-          <div className="flex items-center">
-            {[
-              { color: "bg-purple-500", letter: "A" },
-              { color: "bg-orange-400", letter: "B" },
-              { color: "bg-teal-500", letter: "C" },
-              { color: "bg-blue-500", letter: "D" },
-              { color: "bg-pink-500", letter: "E" },
-            ].map(({ color, letter }, i) => (
-              <div
-                key={i}
-                className={`w-8 h-8 rounded-full border-2 border-white ${color} flex items-center justify-center text-white text-[10px] font-bold font-poppins ${
-                  i > 0 ? "-ml-2" : ""
-                }`}
-              >
-                {letter}
-              </div>
-            ))}
-            <div className="w-8 h-8 rounded-full border-2 border-white bg-[#C5F135] flex items-center justify-center -ml-2">
-              <span className="text-[#0D0D2B] text-[9px] font-bold font-poppins leading-none">
-                2K+
-              </span>
-            </div>
-          </div>
+        <div className="absolute left-[6%] bottom-[10%] z-30 ">
+          <Image
+            src="/images/home/student-layout.png"
+            alt="UI/UX Design - 200 Courses · 1000+ Students"
+            width={500}
+            height={70}
+            className="object-contain w-[270px]"
+          />
         </div>
 
         {/* ── Floating Card: Learning Progress ── */}
-        <div className="absolute right-[4%] top-[10%] z-30 bg-white rounded-2xl shadow-2xl p-0 overflow-hidden">
+        <div className="absolute right-[15%] top-[21%] z-30">
           <Image
             src="/images/home/progress-layout.png"
             alt="Learning Progress - 55%"
-            width={210}
-            height={90}
-            className="object-contain w-[210px]"
+            width={1000}
+            height={1000}
+            className="object-contain w-[285px]"
           />
         </div>
       </div>
-     
     </section>
   );
 }
