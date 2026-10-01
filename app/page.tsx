@@ -1,9 +1,17 @@
-import Image from "next/image";
+import CoursesSection from "./components/CoursesSection";
+import HeroSection from "./components/HeroSection";
+import LearningPaths from "./components/LearningPaths";
+import PartnersStrip from "./components/PartnersStrip";
+import ProGrowth from "./components/ProGrowth";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quisquam iure harum eum ratione officiis repudiandae sed error impedit dolorem fugiat maxime perspiciatis itaque doloribus, mollitia a. Saepe, beatae eligendi!</h1>
-    </div>
+    <main className="flex flex-col">
+      <HeroSection />
+      <PartnersStrip />
+      <CoursesSection />
+      <LearningPaths />
+      <ProGrowth />
+    </main>
   );
 }

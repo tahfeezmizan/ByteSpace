@@ -3,17 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #003be2;
+  --secondary: #d4fb20;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  /* Primary font: Poppins */
-  --font-poppins: var(--font-poppins);
-
-  /* Secondary font: Satoshi */
-  --font-satoshi: var(--font-satoshi);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-sans: var(--font-poppins);
+  --font-mono: monospace;
 }
 
 /* Poppins as default font for every element */
@@ -28,6 +28,10 @@ body {
   color: var(--foreground);
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Utility classes */
 .font-poppins {
   font-family: var(--font-poppins), system-ui, sans-serif;
@@ -35,4 +39,14 @@ body {
 
 .font-satoshi {
   font-family: var(--font-satoshi), system-ui, sans-serif;
+}
+
+/* ── Marquee animation for partners strip ── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
 }
